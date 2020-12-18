@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="ComputerPage.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+	<script src="QuincyJS.js"></script>
+	<!--Title for Main Page. -->
+	<title>Gamers Paradise Main Page</title>
+</head>
+<body onload="getDate(); myFunction()">
+	<div class="bg">
+		<div class="body">
+			<!--Header. -->
+			<h1>Gamers Paradise</h1><!--Background Description of Page.-->
+			<br>
+			<button onclick="UserFunction()">Tell us your favorite video game here!</button>
+			<p id="gamelist"></p><br>
+			<p>Welcome to my first website dedicated to video-games. This website will focus on game reviews and Top-Rated Must-Play Games.</p>
+			<p>Clicking on the pictures for the particular game will redirect you to the games retail page.</p>
+			<p>Below are recently released games, upcoming video games and my personal favorites.</p>
+			<p>*All Images are property of their respective owners*</p>
+			<div class="left">
+				<br>
+				<p id="TimePeriod"></p>
+				<br>
+				<!--Links to other pages. -->
+				<h2>Link to Reviews</h2><a href="https://www.albany.edu/~oa766897/QuincyComputerPage2.html" title="Link to Reviews">Reviews</a><br>
+				<h2>Link to Top Rated Must-Play Games</h2><a href="https://www.albany.edu/~oa766897/QuincyComputerPage3.html" title="Link to Top Rated Games">Top Rated Games</a><br>
+				<h2>Link to Email</h2><a href="mailto:oasemota@albany.edu" title="Link to Email">Any suggestions email me here!</a><br>
+				<br>
+				<button onclick="changeBackground()">Click this button to change the header background!</button>
+				<br>
+				<br>
+				<button onclick="revertBackground()">Click this button to revert background!</button>
+			</div>
+		</div><!--List of video games and pictures, description. -->
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Halo Collection Wikipedia -->
+			<a href="https://www.amazon.com/Halo-Master-Chief-Collection-Xbox-One-x/dp/B00KSQHX1K" target="_blank"><img alt="Halo Master Chief Collection" height="400" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Halo_Collection.jpg/220px-Halo_Collection.jpg" width="600"></a>
+			<div class="desc">
+				Halo Master Chief Collection
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Batman Arkham Knight. -->
+			<a href="https://www.amazon.com/Batman-Arkham-Knight-PlayStation-4/dp/B00IQCRKT8" target="_blank"><img alt="Batman Arkham Knight" height="400" src="https://images-na.ssl-images-amazon.com/images/I/61WcYKQQihL._SY679_.jpg" width="600"></a>
+			<div class="desc">
+				Batman Arkham Knight
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Nintendo - Super Smash Bros Brawl. -->
+			<a href="https://www.amazon.com/Super-Smash-Bros-Ultimate-Nintendo/dp/B07DMFRNF9/ref=sr_1_1?crid=NW5IWZ91ZTSZ&keywords=super+smash+bros+ultimate&qid=1552882130&s=videogames&sprefix=Super+s%2Cvideogames%2C140&sr=1-1" target="_blank"><img alt="Super Smash Bros" height="400" src="https://media.nintendo.com/nintendo/bin/NhJKOajUMaYvsmA3U_t7yopYGn9Ngg68/AX0pHGUTlEwA-EOlpxZF15lslYF-WRp6.png" width="600"></a>
+			<div class="desc">
+				Super Smash Bros. Ultimate
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon Devil May Cry 5. -->
+			<a href="https://www.amazon.com/Devil-May-Cry-5-PlayStation-4/dp/B07DJX3XJS/ref=sr_1_2?crid=2KFOOMFYNKFJR&keywords=devil%2Bmay%2Bcry%2B5&qid=1552882152&s=videogames&sprefix=Devil%2Cvideogames%2C165&sr=1-2&th=1" target="_blank"><img alt="DMC : Devil May Cry 5" height="400" src="https://s1.gaming-cdn.com/images/products/2670/271x377/devil-may-cry-5-cover.jpg" width="600"></a>
+			<div class="desc">
+				DMC : Devil May Cry 5
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon Sekiro Shadows Die Twice. -->
+			<a href="https://www.amazon.com/Sekiro-Shadows-Die-Twice-PlayStation-4/dp/B07DJWBYJN/ref=sr_1_3?crid=2ICVC7YXMHWAV&keywords=sekiro+shadows+die+twice&qid=1552882217&s=videogames&sprefix=Sekiro+Sh%2Cvideogames%2C129&sr=1-3" target="_blank"><img alt="Sekiro Shadows Die Twice" height="400" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Sekiro_art.jpg/220px-Sekiro_art.jpg" width="600"></a>
+			<div class="desc">
+				Sekiro Shadows Die Twice
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Xbox Live The Witcher 3 Wild Hunt GOTY. -->
+			<a href="https://www.amazon.com/Witcher-Wild-Hunt-Complete-PlayStation-4/dp/B01K6010FM/ref=sr_1_1?crid=2CSGLJVO6WLP9&keywords=the+witcher+3+wild+hunt&qid=1552882235&s=videogames&sprefix=The+Witcher+3+Wild%2Cvideogames%2C133&sr=1-1" target="_blank"><img alt="The Witcher 3 Wild Hunt GOTY" height="400" src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcAL_uXqNGDhlNIt0wsKBphnYi_G_lNgvWGjm1ZpEzt6RSg4YfLuLu5eDDhbsqdoeZ5bgrQHQsXbQe2rlsXXJWbZbaKWwymXv5CYD.pvwXaqT5hs1.bLeUyV7eAKuglKP7uMg9Mtoo6yfczWHBQkecY1feVaxvtuBm8qyH68QL0Ao-&w=200&h=300&format=jpg" width="600"></a>
+			<div class="desc">
+				The Witcher 3 Wild Hunt GOTY
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images MOBYGAMES The Elder Scrolls V Skyrim Special Edition. -->
+			<a href="https://www.amazon.com/Elder-Scrolls-Skyrim-Special-Digital/dp/B01J23D1W4/ref=sr_1_1?keywords=Skyrim&qid=1552882267&s=videogames&sr=1-1" target="_blank"><img alt="The Elder Scrolls V - Skyrim" height="400" src="https://www.mobygames.com/images/covers/l/376858-the-elder-scrolls-v-skyrim-special-edition-xbox-one-front-cover.png" width="600"></a>
+			<div class="desc">
+				Elder Scrolls V Special Edition
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Metro Exodus. -->
+			<a href="https://www.amazon.com/Metro-Exodus-Day-One-PlayStation-4/dp/B072JYVYGH/ref=sr_1_1?keywords=Metro+Exodus&qid=1552882284&s=videogames&sr=1-1" target="_blank"><img alt="Metro Exodus" height="400" src="https://s2.gaming-cdn.com/images/products/2140/271x377/metro-exodus-cover.jpg" width="600"></a>
+			<div class="desc">
+				Metro Exodus : Day One
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Electronic Arts Anthem. -->
+			<a href="https://www.amazon.com/Electronic-Arts-US-E3-DC-2018-060618-017-Anthem-Digital/dp/B07DLT4ZCK/ref=sr_1_1?keywords=Anthem&qid=1552882345&s=videogames&sr=1-1" target="_blank"><img alt="Anthem" height="400" src="https://s2.gaming-cdn.com/images/products/2137/orig/anthem-cover.jpg" width="600"></a>
+			<div class="desc">
+				Electronic Arts : Anthem
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images, Persona 5 Wikipedia Images. -->
+			<a href="https://www.amazon.com/Persona-5-Standard-PlayStation-4/dp/B01GKHJP98/ref=sr_1_1?keywords=Persona+5&qid=1552882752&s=videogames&sr=1-1" target="_blank"><img alt="Persona 5" height="400" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Persona_5_cover_art.jpg/220px-Persona_5_cover_art.jpg" width="600"></a>
+			<div class="desc">
+				Persona 5 Standard Edition
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images & Amazon Images God of War . -->
+			<a href="https://www.amazon.com/God-War-Playstation-4/dp/B01GW8XOY2/ref=sr_1_1?keywords=God+of+War+PS4&qid=1552882782&s=videogames&sr=1-1" target="_blank"><img alt="God of War Playstation 4" height="400" src="https://images-na.ssl-images-amazon.com/images/I/5122wZuQ%2BhL.jpg" width="600"></a>
+			<div class="desc">
+				God of War Playstation 4
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Cloudfront.net Days Gone. -->
+			<a href="https://www.amazon.com/Days-Gone-Playstation-4/dp/B01GW8XRCG/ref=sr_1_2?keywords=Days+gone&qid=1552882852&s=videogames&sr=1-2" target="_blank"><img alt="Days Gone" height="400" src="https://d2skuhm0vrry40.cloudfront.net/2017/packshots/64301/1497360389.jpg/EG11/resize/200x-1/format/jpg/days-gone-packshot-cover-boxart.jpg" width="600"></a>
+			<div class="desc">
+				Days Gone Playstation 4
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images & Amazon Images Middle Earth Shadow of War. -->
+			<a href="https://www.amazon.com/Middle-Earth-Shadow-War-PlayStation-4/dp/B06WWDVBKT/ref=sr_1_2?keywords=Shadow%2Bof%2BWar&qid=1552882963&s=videogames&sr=1-2&th=1" target="_blank"><img alt="Anthem" height="400" src="https://images.g2a.com/newlayout/470x470/1x1x0/328fa237b3e1/59f335605bafe39ddf4bdfd4" width="600"></a>
+			<div class="desc">
+				Middle Earth : Shadow of War
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Monster Hunter World. -->
+			<a href="https://www.amazon.com/Monster-Hunter-World-PlayStation-4-Standard/dp/B071G5HZ7F/ref=sr_1_1?keywords=Monster+Hunter+world&qid=1552882994&s=videogames&sr=1-1" target="_blank"><img alt="Monster Hunter World" height="400" src="https://www.mobygames.com/images/covers/l/452382-monster-hunter-world-xbox-one-front-cover.jpg" width="790"></a>
+			<div class="desc">
+				Monster Hunter World
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Resident Evk 2 Biohazard. -->
+			<a href="https://www.amazon.com/Resident-Evil-2-PlayStation-4/dp/B07DJW779T/ref=sr_1_1?crid=3U7SSCESWDZ89&keywords=resident+evil+2&qid=1552883009&s=videogames&sprefix=Resi%2Cvideogames%2C140&sr=1-1" target="_blank"><img alt="Monster Hunter World" height="400" src="https://gpstatic.com/acache/36/92/1/us/packshot-a47cab9b4be0b83bb9c6f332011122a8.jpg" width="790"></a>
+			<div class="desc">
+				Resident Evil 2 Biohazard
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Wikimedia Dark Souls 3. -->
+			<a href="https://www.amazon.com/Dark-Souls-III-Fire-Fades-Xbox/dp/B06XTPJWWL/ref=sr_1_2?keywords=Dark%2BSouls%2B3&qid=1552883023&s=videogames&sr=1-2&th=1" target="_blank"><img alt="Dark Souls 3" height="400" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Dark_souls_3_cover_art.jpg/220px-Dark_souls_3_cover_art.jpg" width="790"></a>
+			<div class="desc">
+				FROMSOFTWARE : Dark Souls 3
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Nier:Automata Complete Editiion. -->
+			<a href="https://www.amazon.com/NieR-Automata-Playstation-4/dp/B017S3OPZM/ref=sr_1_3?keywords=Nier+automata&qid=1552883043&s=videogames&sr=1-3" target="_blank"><img alt="Nier Automata Complete Edition" height="400" src="https://gpstatic.com/acache/31/92/1/uk/packshot-6385a99cc586d96821c92462cb719ff2.jpg" width="790"></a>
+			<div class="desc">
+				Nier: Automata Complete Edition
+			</div>
+		</div>
+		<div class="image-gallery">
+			<!--This reference was retrieved from Google Images Amazon.com Kingdom Heats Chain of Memories. -->
+			<a href="https://www.amazon.com/Kingdom-Hearts-Re-Memories-playstation-2/dp/B001G3B0HC/ref=sr_1_2?crid=WXJMTS2FM8AH&keywords=kingdom+hearts+chain+of+memories&qid=1552883565&s=videogames&sprefix=Kingdom+Hearts+Chain+of+Mem%2Cvideogames%2C137&sr=1-2" target="_blank"><img alt="Kingdom Hearts 3" height="400" src="https://cnet3.cbsistatic.com/img/akPk7j0nnJaymhDb6jEnqz768m0=/970x0/2016/06/09/7f15e2e1-9935-40ae-93c7-df268d722bb8/promotionalartworkkh.png" width="790"></a>
+			<div class="desc">
+				Kingdom Hearts Chain of Memories
+				<div></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
