@@ -1,2 +1,2 @@
 # quincy-proj
-Academic Coursework
+INF 201 Final Project
